@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="styleOn">
+        <item>@drawable/btn_sing_style_01_audition_on</item>
+        <item>@drawable/btn_sing_style_02_pure_on</item>
+        <item>@drawable/btn_sing_style_03_stage_on</item>
+        <item>@drawable/btn_sing_style_04_whisper_on</item>
+        <item>@drawable/btn_sing_style_05_karaoke_on</item>
+        <item>@drawable/btn_sing_style_06_studio_on</item>
+        <item>@drawable/btn_sing_style_07_hall_on</item>
+        <item>@drawable/btn_sing_style_8_busking_on</item>
+        <item>@drawable/btn_sing_style_9_denoising_on</item>
+        <item>@drawable/btn_sing_style_10_cave_on</item>
+    </array>
+</resources>

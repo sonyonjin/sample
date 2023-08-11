@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_profile_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" >
+
+            <ImageView
+                android:id="@+id/iv_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@id/tv_artist"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/card_profile_image"
+            app:layout_constraintTop_toTopOf="@id/card_profile_image"
+            app:layout_constraintEnd_toStartOf="@id/tv_sing_a_song"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="SpUsage"
+            tools:text="좋니" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="8sp"
+            android:maxLines="1"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@id/card_profile_image"
+            app:layout_constraintEnd_toStartOf="@id/tv_sing_a_song"
+            app:layout_constraintStart_toEndOf="@id/card_profile_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_song_title"
+            tools:ignore="SpUsage"
+            tools:text="윤종신" />
+
+        <TextView
+            android:id="@+id/tv_sing_a_song"
+            android:layout_width="78dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_sing_a_song_box"
+            android:gravity="center"
+            android:textColor="#7940ff"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="19.2dp"
+            tools:ignore="SpUsage"
+            tools:text="부르기" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
